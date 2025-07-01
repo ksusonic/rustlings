@@ -13,7 +13,7 @@
 
 // TODO: Adjust the struct as described above.
 struct ReportCard {
-    grade: f32,
+    grade: String,
     student_name: String,
     student_age: u8,
 }
@@ -39,7 +39,7 @@ mod tests {
     #[test]
     fn generate_numeric_report_card() {
         let report_card = ReportCard {
-            grade: 2.1,
+            grade: "2.1".to_string(),
             student_name: "Tom Wriggle".to_string(),
             student_age: 12,
         };
@@ -52,7 +52,7 @@ mod tests {
     #[test]
     fn generate_alphabetic_report_card() {
         let report_card = ReportCard {
-            grade: "A+",
+            grade: "A+".to_string(),
             student_name: "Gary Plotter".to_string(),
             student_age: 11,
         };
